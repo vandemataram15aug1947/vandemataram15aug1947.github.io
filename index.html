@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Antu Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Antu Roy</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/about-me.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Namaste!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Antu Roy</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Power Electronics Engineer  ',
+						'Embedded Systems Developer  ',
+						'Hindi Poet   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Power Electronics Engineer</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/vandemataram1947/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/vandemataram15aug1947" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Antu Roy</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Power Electronics Engineer</span></p>
+										<p><span class="title-s">Experience: </span> <span>2 Years (Research Projects in M.Tech)</span></p>
+										<p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Power Electronics Circuit Design</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Embedded C</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Control Algorithms</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>TI MCU Programming (e.g., TMS320F28379D)</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Modeling, Simulation &amp; PCB Design</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+                                <h2 class="mb-4">About Me</h2>
+
+                                <p style="text-align: justify;">
+                                <strong>Passionate and Dedicated Power Electronics Hardware Engineer</strong> with a Strong Focus on Advanced Power Electronics Control, Their Practical Hardware Implementation (HI) and Embedded Firmware Development. An Extensive Strong Experience in Designing Single-Phase and Three-Phase Hardware Inverter Circuits, Implementing Control Schemes with PI, PR Controllers and 
+                                <a href="https://github.com/vandemataram15aug1947/Indirect_Sensor_Based_FOC_of_Three_Phase_ACIM_Using_SVPWM" target="_blank">FOC</a>, 
+                                as well as PLL Synchronization for Precision Grid Integration. Practiced in Both 
+                                <a href="https://github.com/vandemataram15aug1947/Single_Phase_Inverter_by_YouT/tree/Single_Phase_Inverter_by_YouT" target="_blank">SPWM</a> 
+                                and 
+                                <a href="https://github.com/vandemataram15aug1947/SVPWM_Implementation_for_Three_Phase_Two_Level_Inverter" target="_blank">SVPWM</a> 
+                                Techniques for High-Performance Inverter Operation. Key Focus on Optimizing the Renewable Energy Systems, Particularly Hardware Implementation of Grid-Connected PV Solar Inverters and in the Real-Time Control by 
+                                <a href="https://github.com/vandemataram15aug1947/Code_for_Lab_of_DCPEC/tree/Code_for_Lab_of_DCPEC" target="_blank">ePWM</a> 
+                                and 
+                                <a href="https://github.com/vandemataram15aug1947/8_Temperature_Sensor_ADC_Register_Base/tree/8_Temperature_Sensor_ADC_Register_Base" target="_blank">ADC</a> 
+                                on Precision Microcontrollers Like the TMS320F28379D, Along with SCI/UART and CAN Communication Protocols for Robust Data Exchange and System Coordination. Familiar with Basic Hardware-in-the-Loop (HIL) Using Real-Time (RT) Simulators. Skilled in Using Industry-Standard Tools, Including MATLAB/Simulink, PLECS, 
+                                <a href="https://github.com/vandemataram15aug1947/Gate_Driver_Circuit_Design_by_Altium/tree/Gate_Driver_Circuit_Design_by_Altium" target="_blank">Altium Designer</a>, 
+                                PSpice, LTspice, PSIM, Proteus, Along with LaTeX for Producing Clear Professional Technical Reports, Research Papers, and Presentations. Driven to Contribute actively to Innovative Organizations by Advancing Power Conversion, Renewable Energy, and Control Engineering Systems, Emphasizing Practical Solutions and with a Strong Focus on Efficiency and Innovation.
+                                </p>
+
+								<ul class="about-info mt-4 px-md-0 px-2">
+                                <li class="d-flex"><span>Profile:</span> <span>Power Electronics Hardware Engineer</span></li>
+                                <li class="d-flex"><span>Domain:</span> <span>Inverter Design, Motor Drives &amp; Embedded Systems</span></li>
+                                <li class="d-flex"><span>Education:</span> <span>Master of Technology in Power Electronics</span></li>
+                                <li class="d-flex"><span>Language:</span> <span>Bengali, Hindi &amp; English</span></li>
+                                <li class="d-flex"><span>Design Tools:</span> <span>Altium Designer, PSpice, MATLAB/Simulink, PLECS &amp; LTspice</span></li>
+                                <li class="d-flex"><span>Technical Skills:</span> <span> CCS, ePWM, ADC, PI/PR, FOC, SPWM, SVPWM, SCI/UART &amp; CAN</span></li>
+                                <li class="d-flex"><span>Interest:</span> <span>Hardware Design, Research &amp; Open-Source Projects</span></li>
+                               </ul>
+
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="150">0</span> <span>+</span>
+									<span>&nbsp; Projects Completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/vandemataram1947/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Passionate and Results-Driven Power Electronics Hardware Engineer with Strong Expertise in Inverter Design, Real-Time Embedded Control, and Advanced Power Conversion Systems. Skilled in Implementing Control Algorithms (PI, PR, FOC), Designing Single-Phase and Three-Phase Hardware Circuits, and Developing Firmware for TI Microcontrollers Like the TMS320F28379D. Proficient in Simulation and PCB Design Tools Including MATLAB/Simulink, PLECS, Altium Designer, LTspice, and PSIM. Adept at Bridging the Gap Between Control Theory and Practical Hardware to Develop Efficient, Grid-Connected Renewable Energy Systems.</p>
+			<p><a href="https://github.com/vandemataram15aug1947/GitHub_Profile_and_Portfolio_Website/blob/081ea9ddae916fa05378c6ae6fee9859e99be6bf/ANTU_ROY_8116375765.pdf" class="btn btn-primary py-3 px-4" target="_blank" download>Download Resume</a></p>
+          </div>
+        </div>
+
+
+		
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Winter 2020</span>
+						<h2>Vocational Training Program</h2>
+						<span class="position">WBSETCL &amp; WBSEDCL</span>
+						<p class="mt-4">Trainee was Acquainted with the Electrical Operation &amp; Maintenance Practices &amp; Gained Practical Exposure to the Functioning of Various Substation and Transmission &amp; Distribution Components: 
+							<ul>
+								<li>Power Transformer, Current Transformer, Potential Transformer</li>
+								<li>Circuit Breaker, Lightning Arrestor, Protective Relays</li>
+								<li>Conductors, Isolators, Transmission Towers</li>
+								<li>Electrical Safety Procedures &amp; Devices</li>
+								<li>Station Battery Systems, DC Backup Power Supply &amp; Monitoring</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Monsoon 2019</span>
+						<h2>Technical Orientation Programme</h2>
+						<span class="position">Kolkata Port Trust (KoPT)</span>
+						<p class="mt-4">Participated in a Technical Orientation Programme Focused on Exposure &amp; Awareness of Mechanical &amp; Electrical Engineering Applications in Core Port Operations. Gained Hands-on Understanding of the Systems &amp; Machinery: 
+							<ul>
+								<li>Lock & Dry Dock Systems, Swing Bridge, Bascule Bridge</li>
+                                <li>Electrical Sub-Stations, Mechanical & Electrical Workshops</li>
+                                <li>Crane Vessels, Jet Dredgers, Quay Cranes, Pumps, Penstocks</li>
+                                <li>Compressors, Motors, Generators, Hydraulic Circuits</li>
+                                <li>Power Distribution &amp; Control Systems</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2023-2025</span>
+    					<h2>Master of Technology</h2>
+    					<span class="position">National Institute of Technology Calicut</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2016-2020</span>
+    					<h2>Bachelor of Technology</h2>
+    					<span class="position">Regent Education and Research Foundation</span>
+    					<p class="mt-4">Grade: First Class Distinction.</p>
+    				</div>
+				</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2014-2016</span>
+    					<h2>Higher Secondary Education</h2>
+    					<span class="position">Asannagar High School (H.S)</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2012-2014</span>
+    					<h2>Secondary Education</h2>
+    					<span class="position">Asannagar High School (H.S)</span>
+    					<p class="mt-4">Grade: First Class Distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://github.com/vandemataram15aug1947/GitHub_Profile_and_Portfolio_Website/blob/081ea9ddae916fa05378c6ae6fee9859e99be6bf/ANTU_ROY_8116375765.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are Selected Projects in Power Electronics &amp; Embedded Control, Covering Single-Phase Grid-Connected PV Inverters with PR Control, FOC Control of Three-Phase Induction Motor Using SVPWM, DC Motor Control with ePWM, Gate Driver Circuit Design, Three-Phase Inverter Implementation, as well as Optimization &amp; Monitoring Strategies in Smart Grid Systems.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/vandemataram15aug1947/Single_Phase_Grid_Connected_PV_Inverter" class="block-20 zoom-effect" style="background-image: url('images/Project_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/vandemataram15aug1947/Single_Phase_Grid_Connected_PV_Inverter"> Design and Control of Single-Phase Grid-Connected Inverter for PV Solar Application</a></h3>
+                <p>Developed a Single-Stage Inverter System Integrated with Advanced Control Strategies for Efficient Power Transfer from PV to Grid, Including PR Control &amp; LCL Filter Design. Optimized Inverter Control Techniques on TMS320F28379D to Ensure Superior Conversion Efficiency &amp; Operation While Assessing Performance Across Diverse Environmental, Grid &amp; Operational Scenarios.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/vandemataram15aug1947/Indirect_Sensor_Based_FOC_of_Three_Phase_ACIM_Using_SVPWM" class="block-20 zoom-effect" style="background-image: url('images/Project_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/vandemataram15aug1947/Indirect_Sensor_Based_FOC_of_Three_Phase_ACIM_Using_SVPWM">Field-Oriented Control of Three-Phase Induction Motor Using SVPWM Technique</a></h3>
+                <p>Developed, Analyzed &amp; Simulated FOC-Based Control Techniques for a Three-Phase Induction Motor in MATLAB/Simulink, Integrating SVPWM Implementation on TMS320F28379D for Enhanced Motor Control. Designed &amp; Refined Control Strategies on TMS320F28379D to Deliver Accurate Speed Control, Achieving Optimal Efficiency &amp; Stable Dynamic Behavior Across Different Load Scenarios.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/vandemataram15aug1947/Design_and_Development_of_an_Isolated_Gate_Driver_Circuit" class="block-20 zoom-effect" style="background-image: url('images/Project_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/vandemataram15aug1947/Design_and_Development_of_an_Isolated_Gate_Driver_Circuit">Design and Analysis of Isolated Gate Driver Circuits for Power Electronics Applications</a></h3>
+                <p>This Project Demonstrates a Comprehensive Understanding of the UCC23513DWYR Gate Driver &amp; Its Application in Inverter Systems. The Circuits are Designed to Efficiently Drive Power Switches in High-Frequency Operations, Offering Fast Switching, Strong Isolation &amp; Enhanced Noise Immunity. The UCC23513DWYR is Essential in Power Electronics Applications Like DC-DC Converters, Inverters &amp; Motor Drives.</p>
+              </div>
+            </div>
+          </div>
+
+		  <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/vandemataram15aug1947/Design_and_Analysis_of_3_Phase_Inverter_Using_Sinusoidal_ePWM_Modulation_Technique" class="block-20 zoom-effect" style="background-image: url('images/Project_4.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/vandemataram15aug1947/Design_and_Analysis_of_3_Phase_Inverter_Using_Sinusoidal_ePWM_Modulation_Technique">Design and Analysis of Three-Phase Inverter Using Sinusoidal ePWM Modulation Technique</a></h3>
+                <p>Designed &amp; Analyzed Using PLECS and MATLAB/Simulink, Implemented Hardware on TMS320F28379D Considering Power Electronics Principles &amp; Circuitry for an Open-Loop Three-Phase Inverter. Optimized ePWM Control Algorithms on TMS320F28379D to Achieve Efficient &amp; Smooth Sinusoidal Output Waveforms &amp; Evaluated The Inverter's Performance Under Various Operating Conditions.</p>
+              </div>
+            </div>
+          </div>
+
+		  <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller" class="block-20 zoom-effect" style="background-image: url('images/Project_5.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller">Control of DC Motor Using ePWM on the TMS320F28379D Microcontroller</a></h3>
+                <p>Designed &amp; Optimized PWM Control Algorithms for Precise Motor Speed Control &amp; Efficient Performance. TMS320F28379D is Utilized to Implement Precise Control by Modulating the Duty Cycle of the PWM Signals.</p>
+              </div>
+            </div>
+          </div>
+
+
+		  <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/vandemataram15aug1947/Integration_of_SOC_and_SOH_Estimation_for_Li_ion_Battery_Management" class="block-20 zoom-effect" style="background-image: url('images/Project_6.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/vandemataram15aug1947/Integration_of_SOC_and_SOH_Estimation_for_Li_ion_Battery_Management">Integration of SOC and SOH Estimation for Li-ion Battery Management</a></h3>
+                <p>Implemented Estimation Algorithm in Hardware for Accurate Assessment of SOC, SOH &amp; DOD Parameters. Integrated the Estimation Techniques Into Hardware Systems Enables for Real-Time Monitoring &amp; Analysis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/vandemataram15aug1947/Optimal_Operational_Scheduling_of_a_Grid_Connected_System_Based_on_DSM" class="block-20 zoom-effect" style="background-image: url('images/Project_7.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/vandemataram15aug1947/Optimal_Operational_Scheduling_of_a_Grid_Connected_System_Based_on_DSM">Optimal Operational Scheduling of a Grid Connected System Based on DSM</a></h3>
+				  <p>Solved the Demand Side Management Problem by Considering of a Grid Connected Network by Load Shifting. Reduced the Supply Side's Cost &amp; Increased the Demand Side's Revenue in a Grid Using the DE Algorithm.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/vandemataram15aug1947/Overload_Protection_Monitoring_and_Load_Shifting_of_a_3_Phase_Transformer" class="block-20 zoom-effect" style="background-image: url('images/Project_8.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/vandemataram15aug1947/Overload_Protection_Monitoring_and_Load_Shifting_of_a_3_Phase_Transformer">Overload Protection, Monitoring and Load Shifting of a 3-Phase Transformer</a></h3>
+				  <p>Implemented Real-Time Monitoring to Track Voltage &amp; Current Levels of the Transformer's Performance. Optimized Efficiency &amp; Load Balance Throughout Transformer Phases by Using Load Shifting Techniques.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="5">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="150">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="10">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="50">0</strong>
+                <span>Cups of Coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>Explore My Projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I Love Exploring New Ideas Through Research, Designing Real-Time Hardware Systems, Contributing to Open-Source Projects in Power Electronics &amp; Embedded Control </h4>
+						<br>
+						<p><a href="https://github.com/vandemataram15aug1947" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the Details to Reach Out to Me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Bengaluru, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+91 8116375765</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="https://formsubmit.co/vandemataram15aug1947@gmail.com">vandemataram15aug1947@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://github.com/vandemataram15aug1947/GitHub_Profile_and_Portfolio_Website/blob/081ea9ddae916fa05378c6ae6fee9859e99be6bf/ANTU_ROY_8116375765.pdf">Resume Link</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<!-- <div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div> -->
+
+	<div class="row justify-content-center">
+  <div class="col-md-7 ftco-animate text-center">
+    <h2 class="mb-4" style="color: orange; font-weight: bold;">
+      Submit the Form Below to Get in Touch with Me
+    </h2>
+    <form action="https://formsubmit.co/vandemataram15aug1947@gmail.com" method="POST">
+      <div class="form-group">
+        <input type="text" name="name" class="form-control" placeholder="Enter Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" class="form-control" placeholder="Enter Your Email" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" class="form-control" rows="6" placeholder="Enter Your Message" required></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary py-3 px-5">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Connect with Me on</li>
+					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/vandemataram1947/"><span class="icon-linkedin"></span></a></li>  
+					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li> -->
+					  <li class="ftco-animate"><a href="https://www.facebook.com/share/1CTYErvNRT/"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All Rights Reserved | This Template is Made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
