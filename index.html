@@ -22,14 +22,9 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 
-
-
 <style>
 
-/*======================================
-//--//-->   ABOUT
-======================================*/
-
+/* About */
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -43,7 +38,6 @@
   margin-left: 10px;
 }
 
-
 .skill-mf .progress {
   /* background-color: #cde1f8; */
   margin: .5rem 0 1.2rem 0;
@@ -56,8 +50,7 @@
   background-color: #ffbd39;
 }
 
-
-/* Animation styles */
+/* Animation Styles */
 #typing-animation {
   position: relative;
   font-size: 30px;
@@ -97,9 +90,7 @@
   }
 }
 
-
-/* project image zoom effect */
-
+/* Project Image Zoom Effect */
 .zoom-effect {
   overflow: hidden;
   transition: transform 0.3s ease-out;
@@ -109,14 +100,12 @@
   transform: scale(1.1);
 }
 
-
 </style>
-
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
-	  
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html">Antu Roy</a>
@@ -135,6 +124,8 @@
 	      </div>
 	    </div>
 	  </nav>
+
+	  <!-- Home Section -->
 	  <section id="home-section" class="hero">
 		  <div class="home-slider  owl-carousel">
 	       <div class="slider-item ">
@@ -149,38 +140,38 @@
 		          		<span class="subheading">Namaste!</span>
 			            <h1 class="mb-4 mt-3">I'm <span>Antu Roy</span></h1>
 
-						<!-- Element to contain animated typing -->
+						<!-- Element to Contain Animated Typing -->
 						<span id="typing-animation"></span>
 
 						<script>
 
-						// Initialize the typing animation
+						/* Initialize the Typing Animation */
 						const typingAnimationElement = document.getElementById('typing-animation');
 
-						// Create an array of typing text
+						/* Create an Array of Typing Text */
 						const typingTexts = [
 						'Power Electronics Hardware Engineer  ',
-						'Embedded Systems Developer  ',
+						'Digital Control & Firmware Developer  ',
 						'Hindi Poet   ',
 						];
 
-						// Create a function to display the typing animation for a given text
+						/* Create a Function to Display the Typing Animation for a Given Text */
 						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
+						/* Loop Through Each Character and Add It to the Element */
 						for (let i = 0; i < text.length; i++) {
 							setTimeout(() => {
 							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
+							}, i * 200); /* Increase the Delay to Slow Down the Typing Animation */
 						}
 
-						// Once the animation is complete, reset the text and start over
+						/* Once the Animation is Complete, Reset the Text and Start Over */
 						setTimeout(() => {
 							typingAnimationElement.textContent = '';
 							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
 						}, text.length * 200);
 						}
 
-						// Start the typing animation loop
+						/* Start the Typing Animation Loop */
 						playTypingAnimation(typingTexts[0]);
 
 						</script>
@@ -188,8 +179,8 @@
 						<br>
 						<br>
 			            <h2>Power Electronics Hardware Engineer (R&amp;D)</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
+						<h2 class="d-flex" style="margin-bottom: 0">With Over 1 Year of Experience</h2>
+						<br>
 			            <p><a href="https://www.linkedin.com/in/vandemataram1947/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
 							<a href="https://github.com/vandemataram15aug1947" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a></p>
 		            </div>
@@ -200,8 +191,7 @@
 		</div>
     </section>
 
-
-
+    <!-- About Section -->
     <section class="ftco-about img ftco-section" id="about-section">
     	<div class="container">
 			<div class="row">
@@ -216,12 +206,12 @@
 										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="Portrait of Antu Roy">
 									  </div>
 									</div>
-									<!-- Details next to profile image -->
+									<!-- Details Next to Profile Image -->
 									<div class="col-sm-6 col-md-7">
 									  <div class="about-info">
 										<p><span class="title-s">Name: </span> <span>Antu Roy</span></p>
-						<p><span class="title-s">Job Role: </span> <span>Power Electronics Hardware Engineer (R&amp;D)</span></p>
-										<p><span class="title-s">Experience: </span> <span>Power Electronics R&amp;D and M.Tech Research Projects</span></p>
+		                				<p><span class="title-s">Job Role: </span> <span>Power Electronics Hardware Engineer (R&amp;D)</span></p>
+										<p><span class="title-s">Experience: </span> <span>Over 1 Year of Experience</span></p>
 										<p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p>
 									  </div>
 									</div>
@@ -271,7 +261,7 @@
                                 <h2 class="mb-4">About Me</h2>
 
                                 <p style="text-align: justify;">
-                                <strong>Power Electronics Hardware Engineer (R&amp;D)</strong> with Experience in the Design, Development, and Validation of Power-Converter Systems. Currently Working on a 25 kVA N+1 Redundant UPS Power Module for Mission-Critical Data-Center Applications, with Expertise in Power-Stage Design, Gate-Driver Circuits, Sensing and Protection Circuits, Component Selection, and System Integration. Experienced in Programming TI C2000 Microcontrollers, Including the TMS320F28379D, for PWM Generation, <a href="https://github.com/vandemataram15aug1947/8_Temperature_Sensor_ADC_Register_Base/tree/8_Temperature_Sensor_ADC_Register_Base" target="_blank">ADC Integration</a>, Peripheral Configuration, and Real-Time <a href="https://github.com/vandemataram15aug1947/Code_for_Lab_of_DCPEC/tree/Code_for_Lab_of_DCPEC" target="_blank">ePWM Control</a>. Proficient in Advanced Digital-Control Techniques such as PI and PR Controllers, 2P2Z and 3P3Z Compensators, <a href="https://github.com/vandemataram15aug1947/Indirect_Sensor_Based_FOC_of_Three_Phase_ACIM_Using_SVPWM" target="_blank">Field-Oriented Control (FOC)</a>, <a href="https://github.com/vandemataram15aug1947/Single_Phase_Inverter_by_YouT/tree/Single_Phase_Inverter_by_YouT" target="_blank">SPWM</a>, Two-Level and <a href="https://github.com/vandemataram15aug1947/SVPWM_Implementation_for_Three_Phase_Two_Level_Inverter" target="_blank">Three-Level SVPWM</a>, and PLL Synchronization. Skilled in MATLAB/Simulink, PLECS, Embedded C, Code Composer Studio, <a href="https://github.com/vandemataram15aug1947/Gate_Driver_Circuit_Design_by_Altium/tree/Gate_Driver_Circuit_Design_by_Altium" target="_blank">Altium Designer</a>, LTspice, and PSIM, with Practical Experience in Prototype Development, Hardware Bring-Up, Testing, Debugging, and Root-Cause Analysis.
+                                <strong>Power Electronics Hardware Engineer (R&amp;D)</strong> with Experience in the Design, Development, and Validation of Power-Converter Systems. Currently Working on a 25 kVA N+1 Redundant UPS Power Module for Mission-Critical Data-Center Applications, with Expertise in Power-Stage Design, Gate-Driver Circuits, Sensing and Protection Circuits, Component Selection, and System Integration. Experienced in Programming TI C2000 Microcontrollers, Including the TMS320F28379D, for PWM Generation, <a href="https://github.com/vandemataram15aug1947/8_Temperature_Sensor_ADC_Register_Base/tree/8_Temperature_Sensor_ADC_Register_Base" target="_blank">ADC Integration</a>, Peripheral Configuration, and Real-Time <a href="https://github.com/vandemataram15aug1947/Code_for_Lab_of_DCPEC/tree/Code_for_Lab_of_DCPEC" target="_blank">ePWM Control</a>. Proficient in Advanced Digital-Control Techniques such as PI and PR Controllers, 2P2Z and 3P3Z Compensators, <a href="https://github.com/vandemataram15aug1947/Indirect_Sensor_Based_FOC_of_Three_Phase_ACIM_Using_SVPWM" target="_blank">Field-Oriented Control (FOC)</a>, <a href="https://github.com/vandemataram15aug1947/Single_Phase_Inverter_by_YouT/tree/Single_Phase_Inverter_by_YouT" target="_blank">SPWM</a>, <a href="https://github.com/vandemataram15aug1947/SVPWM_Implementation_for_Three_Phase_Two_Level_Inverter" target="_blank">Two-Level SVPWM</a>, <a href="https://github.com/vandemataram15aug1947/Three-Phase-Three-Level-Diode-Clamped-NPC-Inverter" target="_blank">Three-Level SVPWM</a>, and PLL Synchronization. Skilled in MATLAB/Simulink, PLECS, Embedded C, Code Composer Studio, <a href="https://github.com/vandemataram15aug1947/Gate_Driver_Circuit_Design_by_Altium/tree/Gate_Driver_Circuit_Design_by_Altium" target="_blank">Altium Designer</a>, LTspice, and PSIM, with Practical Experience in Prototype Development, Hardware Bring-Up, Testing, Debugging, and Root-Cause Analysis.
                                 </p>
 
 								<ul class="about-info mt-4 px-md-0 px-2">
@@ -289,7 +279,6 @@
 							</div>
 						</div>
 
-
 						<div class="counter-wrap ftco-animate d-flex mt-md-3">
 							<div class="text">
 								<p class="mb-4">
@@ -305,9 +294,7 @@
 		</div>
     </section>
 
-
-
-	
+    <!-- Resume Section -->
     <section class="ftco-section" id="resume-section">
     	<div class="container">
     		<div class="row justify-content-center pb-5">
@@ -318,9 +305,6 @@
 			<p><a href="Resume/ANTU_ROY_8116375765.pdf" class="btn btn-primary py-3 px-4" target="_blank" download>Download Resume</a></p>
           </div>
         </div>
-
-
-		
 
 		<div class="row">
 			<h1 class="big-4">Experience</h1>
@@ -420,8 +404,7 @@
     	</div>
     </section>
 
-   
-
+    <!-- Project Section -->
     <section class="ftco-section" id="project-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
@@ -434,11 +417,11 @@
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/vandemataram15aug1947/Three-Phase-Three-Level-Diode-Clamped-NPC-Inverter" class="block-20 zoom-effect" style="background-image: url('images/Project_1_NPC_Inverter.jpg');">
+              <a href="https://github.com/vandemataram15aug1947/Three-Phase-Three-Level-Diode-Clamped-NPC-Inverter" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('images/Project_1_NPC_Inverter.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/vandemataram15aug1947/Three-Phase-Three-Level-Diode-Clamped-NPC-Inverter">Three-Phase Three-Level Diode-Clamped NPC Inverter</a></h3>
+                <h3 class="heading"><a href="https://github.com/vandemataram15aug1947/Three-Phase-Three-Level-Diode-Clamped-NPC-Inverter" target="_blank" rel="noopener noreferrer">Three-Phase Three-Level Diode-Clamped NPC Inverter</a></h3>
                 <p>Designed and Simulated a Three-Phase, Three-Level Neutral-Point-Clamped (NPC) Voltage-Source Inverter with a Split DC Link and an LCL Output Filter. Developed Cascaded Voltage and Current PI Control in the Synchronous dq Reference Frame, Including Feedforward and Cross-Coupling Compensation. Implemented Three-Level SVPWM Sector, Region, and Dwell-Time Calculations with Twelve ePWM Gate Commands for Integration on the TMS320F28379D.</p>
               </div>
             </div>
@@ -501,7 +484,6 @@
             </div>
           </div>
 
-
 		  <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
               <a href="https://github.com/vandemataram15aug1947/Integration_of_SOC_and_SOH_Estimation_for_Li_ion_Battery_Management" class="block-20 zoom-effect" style="background-image: url('images/Project_6.jpeg');">
@@ -539,6 +521,7 @@
 	  </div>
     </section>
 
+	<!-- Project Counter Section -->
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
       <div class="container">
 		<div class="row d-md-flex align-items-center">
@@ -592,8 +575,7 @@
 		</div>
 	</section>
 
-
-
+    <!-- Contact Section -->
     <section class="ftco-section contact-section" id="contact-section">
       <div class="container">
       	<div class="row justify-content-center mb-5 pb-3">
@@ -642,7 +624,6 @@
 	          </div>
           </div>
 		  
-
 		  <div class="container">
 			<br>
 			<br>
@@ -651,7 +632,6 @@
 					<h2>Have a <span>Question?</span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVUotlZF4oNrr71OMmyVBFVx7NkwMdbTXblMCia9pbyG9wPg/viewform?usp=preview" class="btn btn-primary py-3 px-5">Get in Touch</a></h2>
 				</div>
 			</div>
-
 
 				<br>
 					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
@@ -664,27 +644,23 @@
 		   </div>
    </div>
  </section>
-
-
- 
 	
+    <!-- Footer -->
     <footer class="ftco-footer ftco-section">
 		<div class="container">
 		  <div class="row">
 			<div class="col-md-12 text-center">
   
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			  <p><!-- Link Back to Colorlib Cannot Be Removed. Template Is Licensed Under CC BY 3.0 -->
 	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All Rights Reserved | Template by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	<!-- Link Back to Colorlib Cannot Be Removed. Template Is Licensed Under CC BY 3.0 --></p>
 			</div>
 		  </div>
 		</div>
 	  </footer>
 
-
-  <!-- loader -->
+  <!-- Loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
